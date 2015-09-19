@@ -23,9 +23,9 @@
     <body>
         <%-- Bild --%>
         <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Projekte</a></li>
-            <li role="presentation"><a href="#">Anmelden</a></li>
+            <li role="presentation" class="active"><a href="welcomeJSF.jsp">Home</a></li>
+            <li role="presentation"><a href="projekte.jsp">Projekte</a></li>
+            <li role="presentation"><a href="erstelle.jsp">Projekt erstellen</a></li>
         </ul>
         <h1>Finde dein nächstes Soziales Projekt!</h1>
         <h5> <p>Willkommen auf den ersten wirklich sozialen Netzwerk.</p>

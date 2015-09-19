@@ -21,7 +21,14 @@
 <link rel="stylesheet" type="text/css" href="/JsfJpaCrud/faces/jsfcrud.css" />
     </head>
     <body>
-       
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="welcomeJSF.jsp">Home</a ></li>
+            <li role="presentation" class="active"><a href="projekte.jsp">Projekte</a></li>
+            <li role="presentation"><a href="erstelle.jsp">Projekt erstellen</a></li>
+        </ul>
+        <h1>Beteilige dich bei projekten oder erstelle in eigenes!</h1>
+        
+        
     </body>
 </html>
 </f:view>

@@ -23,10 +23,15 @@
     <body>
         <ul class="nav nav-tabs">
             <li role="presentation"><a href="welcomeJSF.jsp">Home</a ></li>
-            <li role="presentation" class="active"><a href="projekte.jsp">Projekte</a></li>
-            <li role="presentation"><a href="erstelle.jsp">Projekt erstellen</a></li>
+            <li role="presentation"><a href="projekte.jsp">Projekte</a></li>
+            <li role="presentation" class="active"><a href="erstelle.jsp">Projekt erstellen</a></li>
         </ul>
-        <h1>Beteilige dich bei projekten oder erstelle in eigenes!</h1>
+        <h1>Erstelle dein eigenes Projekt</h1>
+        <h4>Du hast eine gute Idee wie du Hamburg verbessern möchtest, hast aber nicht genug reichweite.
+            Dann bist du hier richtig.
+            Fülle das Formular aus und andere können deine Idee anschauen, kommentieren und mitmachen.
+            Für ein besseres Hamburg!
+        </h4>
         
         
     </body>
