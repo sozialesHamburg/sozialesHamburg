@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Soziales Hamburg</title>
+        
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/JsfJpaCrud/faces/jsfcrud.css" />
+    </h:head>
+    <body>
+            <div class="container">
+            <ul class="nav nav-tabs">
+                <li role="presentation"><a href="welcomeJSF.jsf">Home</a ></li>
+                <li role="presentation"><a href="projekte.jsf">Projekte</a></li>
+                <li role="presentation" class="active"><a href="erstelle.jsf">Projekt erstellen</a></li>
+            </ul>
+            
+            <h1>Erstelle dein eigenes Projekt</h1>
+            <h4>Du hast eine gute Idee wie du Hamburg verbessern möchtest, hast aber nicht genug reichweite.
+                Dann bist du hier richtig.
+                Fülle das Formular aus und andere können deine Idee anschauen, kommentieren und mitmachen.
+                Für ein besseres Hamburg!
+            </h4>
+            
+            <h:form>
+                <div class="form-group">
+                    <label for="InputEmail">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                    <label for="InputName">Vor- und Nachname</label>
+                    <input type="text" class="form-control" id="InputName" placeholder="Vor- und Nachname"/>
+                </div>
+                <div class="form-group">
+                    <label for="InputOrt">Projektname</label>
+                    <input type="text" class="form-control" id="InputProjektname" placeholder="Wie soll dein Projekt heißen?"/>
+                </div>
+                <div class="form-group">
+                    <label for="InputZiele">Projektidee</label>
+                    <textarea type="text" class="form-control" id="InputZiel" placeholder="Welches Ziel hat dein Projekt?" rows="3" cols="50"> </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="InputOrt">Ort</label>
+                    <input type="text" class="form-control" id="InputOrt" placeholder="Wo soll es stattfinden?"/>
+                </div>
+                <div class="form-group">
+                    <label for="InputZeitraum">Zeitraum</label>
+                    <input type="date" class="form-control" id="InputZeitraum" placeholder="Zeitraum"/>
+                </div>
+                
+                <button type="submit" class="btn btn-default">Submit</button>
+
+
+            </h:form>
+            </div>
+        </body>
+    </html>
