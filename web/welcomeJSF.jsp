@@ -1,34 +1,4 @@
-<%--
-	/*
-	 * Copyright (c) 2010, Oracle. All rights reserved.
-	 *
-	 * Redistribution and use in source and binary forms, with or without
-	 * modification, are permitted provided that the following conditions are met:
-	 *
-	 * * Redistributions of source code must retain the above copyright notice,
-	 *   this list of conditions and the following disclaimer.
-	 *
-	 * * Redistributions in binary form must reproduce the above copyright notice,
-	 *   this list of conditions and the following disclaimer in the documentation
-	 *   and/or other materials provided with the distribution.
-	 *
-	 * * Neither the name of Oracle nor the names of its contributors
-	 *   may be used to endorse or promote products derived from this software without
-	 *   specific prior written permission.
-	 *
-	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-	 * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-	 * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-	 * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
-	 * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-	 * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-	 * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-	 * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-	 * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-	 * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
-	 * THE POSSIBILITY OF SUCH DAMAGE.
-	 */
---%>
+
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
@@ -45,34 +15,30 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Soziales Hamburg</title>
+        
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="/JsfJpaCrud/faces/jsfcrud.css" />
     </head>
     <body>
-        <h:form>
-<h1><h:outputText value="JavaServer Faces" /></h1>
-    <br/>
-<h:commandLink action="#{purchaseOrder.listSetup}" value="Show All PurchaseOrder Items"/>
-
-    <br/>
-<h:commandLink action="#{productCode.listSetup}" value="Show All ProductCode Items"/>
-
-    <br/>
-<h:commandLink action="#{product.listSetup}" value="Show All Product Items"/>
-
-    <br/>
-<h:commandLink action="#{microMarket.listSetup}" value="Show All MicroMarket Items"/>
-
-    <br/>
-<h:commandLink action="#{manufacturer.listSetup}" value="Show All Manufacturer Items"/>
-
-    <br/>
-<h:commandLink action="#{discountCode.listSetup}" value="Show All DiscountCode Items"/>
-
-    <br/>
-<h:commandLink action="#{customer.listSetup}" value="Show All Customer Items"/>
-</h:form>
-
+        <%-- Bild --%>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Projekte</a></li>
+            <li role="presentation"><a href="#">Anmelden</a></li>
+        </ul>
+        <h1>Finde dein nächstes Soziales Projekt!</h1>
+        <h5> <p>Willkommen auf den ersten wirklich sozialen Netzwerk.</p>
+            <p> Hier kannst du Soziale Projekte in Hamburg nachlesen 
+                oder wenn du eine gute Idee hast ein eigenes Projekt auf die Beine stellen.</p>
+            
+        </h5>
+        <div id="karte"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75845.86944929649!2d10.00403915136717!3d53.55449312416848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1442672733887" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <div id="postleitzahl"> 
+            
+            <h3>Finde projekte in deiner Nähe</h3>
+        <input type="text" placeholder="Postleitzahl"> <button>Go</button>
+        </div>
     </body>
 </html>
 </f:view>
