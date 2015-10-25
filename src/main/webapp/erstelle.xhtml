@@ -17,6 +17,7 @@
                 <li role="presentation"><a href="welcomeJSF.jsf">Home</a ></li>
                 <li role="presentation"><a href="projekte.jsf">Projekte</a></li>
                 <li role="presentation" class="active"><a href="erstelle.jsf">Projekt erstellen</a></li>
+                 <li role="presentation"><a href="anmelden.jsf">Anmelden</a></li>
             </ul>
             
             <h1>Erstelle dein eigenes Projekt</h1>
@@ -50,6 +51,10 @@
                 <div class="form-group">
                     <label for="InputZeitraum">Zeitraum</label>
                     <input type="date" class="form-control" id="InputZeitraum" value="#{projektBackingBean.zeitraum}" p:placeholder="Zeitraum"/>
+                </div>
+                <div class="form-group">
+                    <label for="InputTags">Tags</label>
+                    <input type="text" class="form-control" id="InputTags" value="#{projektBackingBean.tags}" p:placeholder="Tags"/>
                 </div>
                 
                 <h:commandButton value="register" class="btn btn-default" action="#{projektBackingBean.submit}"></h:commandButton>

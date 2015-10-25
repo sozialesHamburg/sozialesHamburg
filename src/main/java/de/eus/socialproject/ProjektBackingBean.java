@@ -25,6 +25,7 @@ public class ProjektBackingBean implements Serializable {
     private String projektidee;
     private String ort;
     private String zeitraum;
+    private String tags;
 
     public String getName() {
         return name;
@@ -53,6 +54,15 @@ public class ProjektBackingBean implements Serializable {
         
         this.projektidee = projektidee;
     }
+    
+    public String getTags() {
+        return tags;
+    }
+    
+     public void setTags(String tags) {
+        
+        this.tags = tags;
+    }
 
     public String getOrt() {
         return ort;
@@ -73,7 +83,7 @@ public class ProjektBackingBean implements Serializable {
     public String getEmail() {
         return email;
     }
-
+    
     public String submit() {
         System.out.println(email);
         setEmail(null);
