@@ -48,10 +48,6 @@ public class BaseEntityTest {
      */
     @Test
     public void testCreate() {
-        Person person = new Person(13081971, "oliver.hock@kids4it.de", "Oliver");
-        
-        Integer personId = person.getId();
-        assertNotNull(personId);
     }
 
 }

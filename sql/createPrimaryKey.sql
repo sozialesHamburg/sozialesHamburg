@@ -1,0 +1,1 @@
+alter table Projekt add constraint pk_projekt_id primary key (id)

@@ -5,19 +5,25 @@
  */
 package de.eus.socialproject;
 
+import de.eus.dao.DaoInterface;
+import de.eus.dao.ProjektDAO;
+import de.eus.entities.Projekt;
 import java.io.Serializable;
-import javax.enterprise.context.RequestScoped;
+import javax.ejb.Local;
+import javax.ejb.Stateless;
 import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 
 /**
  *
  * @author Emmi
  */
 @Named
-@SessionScoped
-
-public class ProjektBackingBean implements Serializable {
+@Stateless
+public class ProjektBackingBean {
 
     private String email;
     private String name;
@@ -27,6 +33,27 @@ public class ProjektBackingBean implements Serializable {
     private String zeitraum;
     private String tags;
 
+    
+    
+    public String speichern() throws NamingException {
+        System.out.println("speichern() wurde aufgerufen");
+        
+        // TODO Oliver Soll innerhalb des Kontextes injeziert werden.
+        DaoInterface projektDao = (DaoInterface) new InitialContext().lookup("java:module/ProjektDAO");
+
+     // Es handelt sich um ein neues Projekt, so
+        Projekt projekt = new Projekt();
+        projekt.setEmail(email);
+        projekt.setName(name);
+        
+        System.out.println(projekt);
+        projektDao.speichern(projekt);
+        
+        // gehe zur Seite zurueck (bleibe auf der Seite)
+        return "erstelle";
+    }
+
+    
     public String getName() {
         return name;
     }

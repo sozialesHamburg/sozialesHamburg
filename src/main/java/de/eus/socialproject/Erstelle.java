@@ -5,10 +5,16 @@
  */
 package de.eus.socialproject;
 
+import java.io.Serializable;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+
 /**
  *
  * @author Emmi
  */
-public class Erstelle {
-    
+@Named
+@SessionScoped
+public class Erstelle implements Serializable {
+
 }

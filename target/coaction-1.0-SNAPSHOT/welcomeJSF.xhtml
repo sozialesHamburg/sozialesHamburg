@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Soziales Hamburg</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="jsfcrud.css" />
+        <link rel="stylesheet" href="jquery.range.css"/>
+        <script src="jquery.range.js"></script>
+    </h:head>
+    <body>
+        <div  class="container">
+
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="welcomeJSF.jsf">Home</a></li>
+                <li role="presentation"><a href="projekte.jsf">Projekte</a></li>
+                <li role="presentation"><a href="erstelle.jsf">Projekt erstellen</a></li>
+                 <li role="presentation"><a href="anmelden.jsf">Anmelden</a></li>
+            </ul>
+            <h1>Finde dein nächstes Soziales Projekt!</h1>
+            <h5> <p>Willkommen auf den ersten wirklich sozialen Netzwerk.</p>
+                <p> Hier kannst du Soziale Projekte in Hamburg nachlesen 
+                    oder wenn du eine gute Idee hast ein eigenes Projekt auf die Beine stellen.</p>
+
+
+            </h5>
+            <div id="karte"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75845.86944929649!2d10.00403915136717!3d53.55449312416848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1442672733887" width="600" height="450" frameborder="0" style="border:0" allowfullscreen="true"></iframe></div>
+            <div id="postleitzahl"> 
+                <h3>Finde projekte in deiner Nähe</h3>
+                <input type="text" placeholder="Postleitzahl"/> <button>Go</button>
+                <input type="hidden" class="slider-input" value="23" />
+                <input type="text" placeholder="hier soll der slider hin"/>
+
+            </div>
+        </div>
+    </body>
+</html>
